@@ -9,7 +9,7 @@ RUN \
 RUN ln -s /bin/bash /usr/local/bin/bash
 
 # Install Whitesource scanner
-RUN wget -q https://s3.amazonaws.com/file-system-agent/whitesource-fs-agent-17.12.4.jar -O /whitesource-fs-agent.jar
+RUN wget -q https://s3.amazonaws.com/file-system-agent/whitesource-fs-agent-18.1.1.jar -O /whitesource-fs-agent.jar
 
 ENTRYPOINT ["java", "-jar", "/whitesource-fs-agent.jar"]
 CMD ["-h"]
